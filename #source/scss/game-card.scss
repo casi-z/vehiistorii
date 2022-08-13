@@ -1,0 +1,82 @@
+.card{
+    font-family: 'BlagovestFourSerifC';
+    width: 100%;
+    height: 100%;
+    background: $beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    &__title{
+        width: 100%;
+        height: 10%;
+        background: $red;
+        color: $beige;
+        text-transform: uppercase;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img{
+        margin: 1vh 0;
+        width: 100%;
+        height: 50%;
+        background: url(../img/cards/1.png) center/cover;
+        background-size: 120%;
+
+    }
+    &__description{
+        margin: 0 1vw;
+        color: $black;
+        text-align: center;
+        margin-top: 3vh;
+        height: 30%;
+        width: 100%;
+        font-family: 'BlagovestFourSerifC';
+        font-weight: normal;
+
+        
+    }
+    &__state{
+        align-self: flex-start;
+        padding: 0.5vh 1vw;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+        text-transform: lowercase;
+    }
+    &_preview{
+        width: 40%;
+        height: 50vh;
+        @media (max-width:767px) {
+            width: 95%;
+            min-height: 70vh;
+        }
+        
+        border-radius: 2vh;
+        overflow: hidden;
+        position: relative;
+        .card__title{
+            font-size: 10px;
+        }
+        
+        .card__number{
+            font-size: 20px;
+            position: absolute;
+            transition-duration: 100ms;
+            color: $white;
+            &_1{top: 0;left: 50%;}
+            &_2{top: 30%;left: 50%;}
+            &_3{top: 70%;left: 50%;}
+            &_4{top: 94%;left: 27%;}
+            &._active{
+                color: yellow;
+            }
+            
+        }
+
+    }
+}

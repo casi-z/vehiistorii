@@ -1,0 +1,94 @@
+.page{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    &__parallax {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 130%;
+        height: 130%;
+        background: url(../img/bg.jpg) center/cover ;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .screen{
+        //padding-top: 7vh;
+        flex: 1 0 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        @media (max-width:767px) {
+            overflow: visible;
+            max-height: 200vh;
+            height: auto;
+        }
+        // &#2{
+        //     background: white;
+        // }
+        &__content{
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $black;
+            @media (max-width:767px) {
+                max-height: 200vh;
+                height: auto;
+            }
+            
+            &.scroll{
+                font-size: 18px;
+                height: auto;
+                padding: 30px;
+            }
+        }
+        &__body{
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            //overflow: hidden;
+        }
+        &__image{
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+}
+.arrow{
+    width: 10vh;
+    height: 10vh;
+    position: fixed;
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(50%, 50%);
+    background: #000;
+    
+}
+@media (max-width:1200px) {
+}
+@media (max-width:992px) {
+}
+@media (max-width:767px) {
+    
+}

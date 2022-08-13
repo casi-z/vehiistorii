@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Project</title>
+   
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="css/style.css">
+   <!-- ?https://icons.getbootstrap.com/ -->
+</head>
+
+<body>
+   <header class="header">
+      <h1 class="header__logo"><span class="circle"></span> Вехи истории</h1>
+      <nav class="header__navbar-wrapper">
+         <ul class="header__navbar main-menu">
+            <li class="main-menu__item slide-anchor">ГЛАВНАЯ
+               <div class="main-menu__scroll-bar"></div>
+            </li>
+            <li class="target main-menu__item slide-anchor">ПРАВИЛА</li>
+            <li class="main-menu__item slide-anchor">О НАС</li>
+            <li class="main-menu__item slide-anchor">КОНТАКТЫ</li>
+            <!-- <li id="donate" class="main-menu__item"><a href="donate.html">донат</a></li> -->
+            
+            <!-- TODO:<li class="main-menu__item main-menu__item_lang-button" onclick="langChange('eng')"></li> -->
+            
+         </ul>
+      </nav>
+      <div class="header__burger burger">
+         <svg class="arrow-bottom-3" viewBox="0 0 5 9">
+            <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+         </svg>
+      </div>
+
+   </header>
+   <div class="wrapper">
+      <div id="main" class="page">
+         <div class="page__parallax parallax-bg" data-swiper-parallax="-20%"></div>
+         <div class="page__wrapper">
+            <div id="1" class="page__screen screen">
+               <div class="screen__content">
+                  <div class="content content_main">
+                     <div class="content__bar content__bar_left">
+                        <h2>ВЕХИ ИСТОРИИ</h2>
+                        <div class="social-bar">
+                           <a href="https://vk.com/vehi_istorii" class="social-bar__item">
+                              <span>VK</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="content__bar content__bar_right">
+                        <div id="cards" class="swiper">
+                           <div class="swiper__wrapper swiper-wrapper">
+                              <div class="swiper__slide swiper-slide">
+                                 <div class="card">
+                                    <div class="card__title">
+                                       <span>Поездка митрополита Алексея</span>
+                                    </div>
+                                    <div class="card__img"></div>
+                                    <div class="card__description">
+                                       Отмените активный эффект любой карты.
+                                       В своей поездке в Орду Митрополит Алексей исцелил мать хана и поднял свой авторитет
+                                    </div>
+                                    <img src="img/cards/spear.PNG" alt="">
+                                    <div class="card__state">
+                                       <div class="card__state">явление</div>
+                                       <!-- !<svg height="100%" viewBox="0 0 24 24" width="100%"><path d="M7.41,8.59L12,13.17l4.59-4.58L18,10l-6,6l-6-6L7.41,8.59z" fill="#fff"></path></svg> -->
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="swiper__slide swiper-slide">
+                                 <div class="card">
+                                    <div class="card__title">
+                                       <span>Александр Невский</span>
+                                    </div>
+                                    <div style="background: url(img/cards/2.png) 100%;" class="card__img"></div>
+               
+                                    <div class="card__description">
+                                       Если здоровье игрока меньше 10
+                                       карта получает +1/0
+                                    </div>
+                                    <img src="img/cards/spear.PNG" alt="">
+                                    <div class="card__state">
+                                       <div>персонаж</div>
+                                       <div>2/2</div>
+                                       
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="swiper__slide swiper-slide">
+                                 <div class="card">
+                                    <div class="card__title">
+                                       <span>Пересвет и Ослябя</span>
+                                    </div>
+                                    <div style="background: url(img/cards/3.png) center/cover; background-size: 120%;" class="card__img"></div>
+                                    <div class="card__description">
+                                       Пересвет и Ослябя - монахи-герои 
+                                       Куликовской битвы, посланные Сергием 
+                                       Радонежским в помощь Дмитрию Донскому
+                                       
+                                    </div>
+                                    <img src="img/cards/spear.PNG" alt="">
+                                    <div class="card__state">
+                                       <div>Персонаж</div>
+                                       <div>3/1</div>
+                                       
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>   
+            </div>
+              
+            <div id="2" class="page__screen screen">
+               <div class="screen__content">
+                  <div class="content content_rules">
+                     <div class="accordeon _active">
+                        <div class="accordeon__body">
+                           <div class="accordeon__name">
+                              <div class="accordeon__number">1</div>
+                              <span>Подготовка к игре</span>
+                           </div>
+                           <div class="accordeon__button">
+                              <svg class="arrow-bottom-3" viewBox="0 0 5 9">
+                                 <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                              </svg>
+                           </div>
+                           
+                        </div>
+                        <div class="accordeon__content">
+                           <div class="swiper mySwiper">
+                              <div class="swiper-wrapper">
+                                 <div class="swiper-slide">
+                                    <h4>Подготовка к игре</h4>
+                                    <p>
+                                       Разложите поле и счетчики здоровья. Перемешайте колоду карт. Раздайте игрокам по 6 карт, остальную колоду положите рядом с игроками. Игроки определяют порядок хода: первым будет ходить младший игрок.
+                                    </p>
+                                    <h4>Цель игры</h4>
+                                    <p>лишить противника всех очков здоровья (ОЗ) – то есть довести ползунок его здоровья с 100 до 0!</p>
+                                    <h4>На чем играть</h4>
+                                    <p>
+                                       Поле (стол) представляет собой 5 форм для карт, расположенных друг напротив друга. Игрок может выкладывать карты на любую форму, свободную от карт. Карт, выложенная на стол (на любую из форм), остается неподвижной до тех пор, пока не будет уничтожена. Иногда карты могут быть убраны или сдвинуты с помощью различных эффектов других карт (см. Эффекты карт). Карта, выложенная на форму, атакует только по прямой; если напротив лежит карта противника – атакуется эта карта; если карт напротив нет – атакуется сам противник.
+                                    </p>
+                                    <h4>Как вывести карты на стол</h4>
+                                    <p>у каждой карты есть свои очки стоимости. Если вам хватает очков стоимости (монеток) – не стесняйтесь и выводите карту! Все потраченные монеток восстанавливаются в конце хода. Стоимость вывода карты указана в правом верхнем углу карты.</p>
+                                    
+                                 </div>
+                                 <div class="swiper-slide small"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordeon">
+                        <div class="accordeon__body">
+                           <div class="accordeon__name">
+                              <div class="accordeon__number">2</div>
+                              <span>правила</span>
+                           </div>
+                           <div class="accordeon__button">
+                              <svg class="arrow-bottom-3" viewBox="0 0 5 9">
+                                 <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="accordeon__content">
+                           <div class="swiper mySwiper">
+                              <div class="swiper-wrapper">
+                                 <div class="swiper-slide">
+                                    <h4>Как делать ход</h4>
+                                    <p>
+                                       Игра состоит из раундов. Раунд – это 2 хода: Ваш и противника.                                    
+                                    </p>
+                                    <ul type="1">
+                                       <li>
+                                          	В начале раунда каждый игрок получает по 1 монетке (получение + 1 монетки к имеющемуся числу действует первые 7 раундов)
+                                       </li>
+                                       <li>
+                                          	Фаза подготовки: игрок может сделать одно из двух действий. Первое – взять из колоды две карты, посмотреть их, а затем взять одну из карт себе в руку, положив вторую карту вниз колоды. Второе - выложить любое количество своих карт на стол. Еще раз: ЛИБО берешь одну из двух просмотренных карт из колоды, ЛИБО выкладываешь карты.                                       </li>
+                                       <li>
+                                          	Фаза атаки: все карты игрока, которые лежат на столе, атакуют по прямой. Про нанесение урона см. ниже.                                       
+                                       </li>
+                                       <li>
+                                          	После фазы атаки первого игрока ход переходит к другому игроку. После хода и фазы атаки второго игрока наступает конец раунда: все потраченные монетки восстанавливаются.                                       
+                                       </li>
+                                    </ul>
+                                    <h4>ВАЖНО</h4>
+                                    <p>
+                                       В первом раунде игрок, который ходит вторым, получает дополнительное очко стоимости (только на первый раунд). После его первого хода это очко стоимости убирается до конца игры – неважно, было ли оно использовано или нет. 
+                                    </p>   
+                                    <h4>Как работает получение урона</h4>
+                                    <p>
+                                       Когда карта лежит на столе – она автоматически атакует каждый ваш ход во время фазы атаки. Если поле напротив свободно – урон от атаки карты попадает по сопернику. Если напротив лежит карта соперника – урон идет по ней. Урон вашей карты больше или равен здоровью карты противника? Ваша карта убивает карту противника, она отправляется в сброс! Урон меньше – обе карты остаются на столе.
+                                    </p>      
+                                    <h4>Компоненты игры</h4>
+                                    <p>
+                                       карты, поле, очки стоимости, показатели жизни игроков, линия времени
+                                    </p>   
+                                    <h4>Карты</h4>
+                                    <p>
+                                       В игре есть 118 карт, разбитые на 3 фракции: Древняя Русь, Московская Русь и Россия XV-XVI вв. Карты бывают 4 типов: личности, бойцы, действия и артефакты. Личности – основные персонажи истории России, обладают наиболее привлекательными личностными характеристиками и эффектами. Бойцы – рядовые и наиболее частые карты. Действия – особые карты, позволяющие изменить ход игры. Артефакты – карты усиления, которые накладываются на персонажей.
+                                    </p>   
+                                 </div>
+                                 <div class="swiper-slide small"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordeon">
+                        <div class="accordeon__body">
+                           <div class="accordeon__name">
+                              <div class="accordeon__number">3</div>
+                              <span>правила</span>
+                           </div>
+                           <div class="accordeon__button">
+                              <svg class="arrow-bottom-3" viewBox="0 0 5 9">
+                                 <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                              </svg>
+                           </div>
+                           
+                        </div>
+                        <div class="accordeon__content">
+                           <div class="swiper mySwiper">
+                              <div class="swiper-wrapper">
+                                 <div class="swiper-slide swiper-slide_row">
+                                    <div class="card card_preview">
+                                       <i class="card__number card__number_1 bi bi-1-circle"></i>
+                                       <i class="card__number card__number_2 bi bi-2-circle"></i>
+                                       <i class="card__number card__number_3 bi bi-3-circle"></i>
+                                       <i class="card__number card__number_4 bi bi-4-circle"></i>
+                                       <div class="card__title">
+                                          <span>Поездка митрополита Алексея</span>
+                                       </div>
+                                       <div class="card__img"></div>
+                                       <div class="card__description">
+                                          Отмените активный эффект любой карты.
+                                          В своей поездке в Орду Митрополит Алексей исцелил мать хана и поднял свой авторитет
+                                       </div>
+                                       <img src="img/cards/spear.PNG" alt="">
+                                       <div class="card__state">
+                                          <div class="card__state">явление</div>
+                                          
+                                       </div>
+                                    </div>
+                                    <div class="card-description">
+                                       
+                                       <div class="card-description__text"><i class="card-description__number bi bi-1-circle"></i>Название карты</div>
+                                       <div class="card-description__text"><i class="card-description__number bi bi-2-circle"></i>Изображение карты</div>
+                                       <div class="card-description__text"><i class="card-description__number bi bi-3-circle"></i>Описание карты</div>
+                                       <div class="card-description__text"><i class="card-description__number bi bi-4-circle"></i>Тип карты</div>
+                                       
+                                    </div>
+
+                                 </div>
+                                 <div class="swiper-slide small"></div>
+                              </div>
+                              <div class="swiper-scrollbar"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="3" class="page__screen screen">
+               <div class="screen__content">
+                  Slide 3
+               </div>
+            </div>
+            <div id="4" class="page__screen screen">
+               <div class="screen__content">
+                  Slide 4
+            </div>
+            </div>
+         </div>
+      </div>
+   </div> 
+   <div class="cursor"></div> 
+   <!-- ?СКРИПТЫ -->
+   
+   <script src="js/swiper.js"></script>
+   <script src="js/main.js"></script>
+
+   <!-- ?/СКРИПТЫ -->
+   
+</body>
+</html>
+   

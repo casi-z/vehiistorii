@@ -1,0 +1,39 @@
+*{cursor: none !important;}
+.cursor{
+    @media (max-width:990px) {
+        display: none;
+    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1.7vw;
+    height: 1.7vw;
+    border-radius: 50%;
+    background: white;
+    z-index: 999999;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    &.pointer{
+        transform: scale(1.8) translate(-50%, -50%);
+        background: none;
+        border: 2px solid white;
+        text-decoration: 100ms;
+        &:focus{
+            transform: scale(2);
+            background: none;
+            border: white;
+        }
+        
+    }
+    &.clicked{
+        transform: scale(2);
+        background: none;
+        border: white;
+    }
+}
